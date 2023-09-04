@@ -1,21 +1,22 @@
 import React from "react";
-import { link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Category.scss";
 
-const CategoryList = ({ Categories }) => {
+const CategoryList = ({ categories }) => {
   return (
     <div className="section-wrapper bg-whitesmoke">
       <div className="container">
         <div className="sc-title">categories</div>
         <section className="sc-category grid">
-          {categories.map((category) => {
+          {
+          categories.map((category) => {
             const {
               idCategory: id,
               strCategory: title,
               strCategoryThumb: thumbnail,
             } = category;
             return (
-              <link
+              <Link
                 to={`/meal/category/${title}`}
                 className="category-itm align-center justify-center"
                 key={id}
@@ -28,7 +29,7 @@ const CategoryList = ({ Categories }) => {
                     </h3>
                   </div>
                 </div>
-              </link>
+              </Link>
             );
           })}
         </section>

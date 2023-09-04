@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.scss";
 import { BsSearch } from "react-icons/bs";
-import { useMealContext } from "../../contextmealContext";
+import { useMealContext } from "../../context/mealContext";
 import { useNavigate } from "react-router-dom";
 import { startFetchMealsBySearch } from "../../actions/mealsActions";
 
