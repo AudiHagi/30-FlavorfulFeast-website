@@ -12,6 +12,12 @@
   .navbar-search-btn {
     margin-right: 12px;
   }
+  .brand-and-toggler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .scrolled {

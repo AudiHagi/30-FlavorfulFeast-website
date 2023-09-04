@@ -16,9 +16,11 @@ const Navbar = () => {
       setScrolled(false);
     }
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   });
+  
   return (
     <nav
       className={`navbar bg-orange flex align-center ${

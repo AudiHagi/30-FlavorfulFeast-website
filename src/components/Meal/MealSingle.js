@@ -98,7 +98,7 @@ const MealSingle = ({ meal }) => {
                     <span className="li-icon fs-12 text-orange">
                       <FaUtensilSpoon />
                     </span>
-                    <span className="li-text fs-15 fw-6 op-09">{measure}</span>
+                    <span className="li-text fs-15 fw-6 op-09">&nbsp;{measure}</span>
                   </li>
                 ))}
               </ul>
@@ -114,7 +114,7 @@ const MealSingle = ({ meal }) => {
                       className="text-orange li-icon"
                     />
                     <span className="li-text fs-16 fw-5 op-09">
-                      {instruction}
+                    &nbsp;{instruction}
                     </span>
                   </li>
                 ))}
